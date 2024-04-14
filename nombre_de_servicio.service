@@ -1,0 +1,12 @@
+[Unit]
+Description=Servicio de Monitoreo de Cambios en Directorios
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /home/valeria/Documents/ejercicio4.sh
+WorkingDirectory=/home/valeria/Documents/
+
+[Install]
+WantedBy=multi-user.target
+
